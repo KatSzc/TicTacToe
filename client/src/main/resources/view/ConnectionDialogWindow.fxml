@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<DialogPane xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="pl.sda.poznan.controller.ConnectionDialogController"
+  prefHeight="400.0" prefWidth="600.0">
+
+  <headerText>
+    Umiesc naglowek tutaj
+  </headerText>
+  <content>
+    <GridPane>
+      <Label text="pl.sda.poznan.Server address: " GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <GridPane.margin>
+          <Insets bottom="20"/>
+        </GridPane.margin>
+      </Label>
+
+      <TextField fx:id="serverAddressTextField" GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <GridPane.margin>
+          <Insets bottom="20"/>
+        </GridPane.margin>
+      </TextField>
+
+      <Label text="Player name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+      <TextField fx:id="playerNameTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </GridPane>
+  </content>
+</DialogPane>
